@@ -1,0 +1,90 @@
+\doxysection{Dispositivo\+IoT Class Reference}
+\hypertarget{class_dispositivo_io_t}{}\label{class_dispositivo_io_t}\index{DispositivoIoT@{DispositivoIoT}}
+
+
+Representa un dispositivo IoT.  
+
+
+
+
+{\ttfamily \+\#include $<$Dispositivo\+Io\+T.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_dispositivo_io_t_a08f6916dd7caa61a9a202ff0b4a5ce59}{Dispositivo\+IoT}} (string id)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_dispositivo_io_t_af38143d9f6146fb230e8f3abad469b73}\label{class_dispositivo_io_t_af38143d9f6146fb230e8f3abad469b73} 
+void {\bfseries conectar} ()
+\begin{DoxyCompactList}\small\item\em Conecta el dispositivo. \end{DoxyCompactList}\item 
+\Hypertarget{class_dispositivo_io_t_a69640d9075973eb22ecc261c42113d21}\label{class_dispositivo_io_t_a69640d9075973eb22ecc261c42113d21} 
+void {\bfseries desconectar} ()
+\begin{DoxyCompactList}\small\item\em Desconecta el dispositivo. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_dispositivo_io_t_a37b1818fd2ff3df89e2284301574d6ed}{registrar\+Consumo}} (float valor)
+\begin{DoxyCompactList}\small\item\em Registra consumo. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{class_dispositivo_io_t_a2083bc800bfa836b681727fa56cc6dfa}{consumo\+Total}} () const
+\begin{DoxyCompactList}\small\item\em Calcula consumo total. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un dispositivo IoT. 
+
+Permite gestionar conexión y consumo de energía 
+
+\label{doc-constructors}
+\Hypertarget{class_dispositivo_io_t_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dispositivo_io_t_a08f6916dd7caa61a9a202ff0b4a5ce59}\index{DispositivoIoT@{DispositivoIoT}!DispositivoIoT@{DispositivoIoT}}
+\index{DispositivoIoT@{DispositivoIoT}!DispositivoIoT@{DispositivoIoT}}
+\doxysubsubsection{\texorpdfstring{DispositivoIoT()}{DispositivoIoT()}}
+{\footnotesize\ttfamily \label{class_dispositivo_io_t_a08f6916dd7caa61a9a202ff0b4a5ce59} 
+Dispositivo\+Io\+T::\+\+Dispositivo\+IoT (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del dispositivo \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dispositivo_io_t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dispositivo_io_t_a2083bc800bfa836b681727fa56cc6dfa}\index{DispositivoIoT@{DispositivoIoT}!consumoTotal@{consumoTotal}}
+\index{consumoTotal@{consumoTotal}!DispositivoIoT@{DispositivoIoT}}
+\doxysubsubsection{\texorpdfstring{consumoTotal()}{consumoTotal()}}
+{\footnotesize\ttfamily \label{class_dispositivo_io_t_a2083bc800bfa836b681727fa56cc6dfa} 
+float Dispositivo\+Io\+T::\+consumo\+Total (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Calcula consumo total. 
+
+\begin{DoxyReturn}{Returns}
+suma de consumos 
+\end{DoxyReturn}
+\Hypertarget{class_dispositivo_io_t_a37b1818fd2ff3df89e2284301574d6ed}\index{DispositivoIoT@{DispositivoIoT}!registrarConsumo@{registrarConsumo}}
+\index{registrarConsumo@{registrarConsumo}!DispositivoIoT@{DispositivoIoT}}
+\doxysubsubsection{\texorpdfstring{registrarConsumo()}{registrarConsumo()}}
+{\footnotesize\ttfamily \label{class_dispositivo_io_t_a37b1818fd2ff3df89e2284301574d6ed} 
+void Dispositivo\+Io\+T::\+registrar\+Consumo (\begin{DoxyParamCaption}\item[{float}]{valor}{}\end{DoxyParamCaption})}
+
+
+
+Registra consumo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & consumo en Watt\+Hora \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+include/\+Dispositivo\+Io\+T.\+h\item 
+src/\+Dispositivo\+Io\+T.\+cpp\end{DoxyCompactItemize}

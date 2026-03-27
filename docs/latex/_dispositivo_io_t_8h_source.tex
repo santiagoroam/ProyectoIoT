@@ -1,0 +1,34 @@
+\doxysection{Dispositivo\+Io\+T.\+h}
+\hypertarget{_dispositivo_io_t_8h_source}{}\label{_dispositivo_io_t_8h_source}\index{include/DispositivoIoT.h@{include/DispositivoIoT.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DISPOSITIVOIOT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DISPOSITIVOIOT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_dispositivo_io_t_a08f6916dd7caa61a9a202ff0b4a5ce59}{DispositivoIoT}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{string}\ id;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{bool}\ conectado;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{float}\ consumoWattHora;}
+\DoxyCodeLine{00018\ \ \ \ \ vector<float>\ registroConsumo;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{class_dispositivo_io_t_a08f6916dd7caa61a9a202ff0b4a5ce59}{DispositivoIoT}}(\textcolor{keywordtype}{string}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_dispositivo_io_t_af38143d9f6146fb230e8f3abad469b73}{conectar}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_dispositivo_io_t_a69640d9075973eb22ecc261c42113d21}{desconectar}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_dispositivo_io_t_a37b1818fd2ff3df89e2284301574d6ed}{registrarConsumo}}(\textcolor{keywordtype}{float}\ valor);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_dispositivo_io_t_a2083bc800bfa836b681727fa56cc6dfa}{consumoTotal}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
